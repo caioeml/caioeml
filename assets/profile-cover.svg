@@ -4,7 +4,7 @@
   <style>
     .web { stroke-dasharray: 20 18; animation: dash 8s linear infinite; }
     .web2 { stroke-dasharray: 12 22; animation: dash 11s linear infinite reverse; }
-    .pulse { animation: pulse 3.4s ease-in-out infinite; transform-origin: center; }
+    .pulse { animation: pulse 3.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
     .float { animation: float 4.8s ease-in-out infinite; }
     .blink { animation: blink 2.7s ease-in-out infinite; }
     .code { animation: slide 7s linear infinite; }
@@ -63,12 +63,14 @@
     <text x="0" y="138" fill="#eaf6ff" font-family="Segoe UI, Arial, sans-serif" font-size="20">React • JavaScript • PHP • MySQL • C# • .NET</text>
   </g>
 
-  <g class="float" transform="translate(914 84)">
-    <path d="M92 7C121 17 144 45 147 77C151 121 122 162 87 183C79 188 68 188 60 183C25 162 -4 121 0 77C3 45 25 17 55 7C67 3 80 3 92 7Z" fill="#d81735" stroke="#ff7184" stroke-width="4" filter="url(#softGlow)" />
-    <path d="M47 70C62 55 84 55 100 70C91 82 78 88 64 88C56 88 50 82 47 70Z" fill="#eaf6ff" />
-    <path d="M100 70C85 55 63 55 47 70C56 82 69 88 83 88C91 88 97 82 100 70Z" fill="#eaf6ff" opacity="0.9" transform="translate(0 0) scale(-1 1) translate(-147 0)" />
-    <path d="M74 38V174M30 80C53 94 94 94 118 80M22 116C49 132 99 132 126 116" stroke="#6b0715" stroke-width="3" opacity="0.75" />
-    <circle class="pulse" cx="74" cy="96" r="113" stroke="#ff405c" stroke-width="3" opacity="0.45" />
+  <g transform="translate(914 84)">
+    <g class="float">
+      <path d="M92 7C121 17 144 45 147 77C151 121 122 162 87 183C79 188 68 188 60 183C25 162 -4 121 0 77C3 45 25 17 55 7C67 3 80 3 92 7Z" fill="#d81735" stroke="#ff7184" stroke-width="4" filter="url(#softGlow)" />
+      <path d="M47 70C62 55 84 55 100 70C91 82 78 88 64 88C56 88 50 82 47 70Z" fill="#eaf6ff" />
+      <path d="M100 70C85 55 63 55 47 70C56 82 69 88 83 88C91 88 97 82 100 70Z" fill="#eaf6ff" opacity="0.9" transform="translate(0 0) scale(-1 1) translate(-147 0)" />
+      <path d="M74 38V174M30 80C53 94 94 94 118 80M22 116C49 132 99 132 126 116" stroke="#6b0715" stroke-width="3" opacity="0.75" />
+      <circle class="pulse" cx="74" cy="96" r="113" stroke="#ff405c" stroke-width="3" opacity="0.45" />
+    </g>
   </g>
 
   <g class="blink" filter="url(#softGlow)">
