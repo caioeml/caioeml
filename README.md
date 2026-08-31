@@ -5,18 +5,24 @@ Sou desenvolvedor em formação, criando projetos que juntam interface, regra de
 Atualmente venho praticando com projetos em **React**, **JavaScript**, **PHP**, **MySQL**, **C#** e **ASP.NET MVC/API**, sempre buscando escrever código mais claro, componentizado e fácil de manter.
 
 <div align="left">
-  <a href="https://github.com/caioeml">
-    <img height="150" src="https://github-readme-stats.vercel.app/api?username=caioeml&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub stats de Caio Lima" />
-  </a>
-  <a href="https://github.com/caioeml">
-    <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=caioeml&layout=compact&theme=tokyonight&hide_border=true" alt="Linguagens mais usadas por Caio Lima" />
-  </a>
+  <img src="https://img.shields.io/badge/Front--end-React%20%7C%20Vite-61DAFB?style=for-the-badge&logo=react&logoColor=111111" alt="Front-end: React e Vite" />
+  <img src="https://img.shields.io/badge/Back--end-PHP%20%7C%20C%23-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="Back-end: PHP e C Sharp" />
+  <img src="https://img.shields.io/badge/Banco%20de%20dados-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="Banco de dados: MySQL" />
 </div>
 
 ## Tecnologias
 
 <div align="left">
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,vite,php,mysql,cs,dotnet,git,github,vscode" alt="Tecnologias: HTML, CSS, JavaScript, React, Vite, PHP, MySQL, C Sharp, .NET, Git, GitHub e VS Code" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111111" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt="C Sharp" />
+  <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
 </div>
 
 ## Projetos em destaque
@@ -25,25 +31,25 @@ Atualmente venho praticando com projetos em **React**, **JavaScript**, **PHP**, 
 
 Loja virtual em **PHP + MySQL**, com autenticação, sessões, carrinho, páginas de suporte, layout responsivo e alternância entre tema claro e escuro.
 
-[Ver repositorio](https://github.com/caioeml/CaioStore)
+[Ver repositório](https://github.com/caioeml/CaioStore)
 
 ### Bookstore React
 
 Projeto em **React + Vite** para praticar construção de interfaces modernas, componentes reutilizáveis e organização de aplicações frontend.
 
-[Ver repositorio](https://github.com/caioeml/Bookstore-React)
+[Ver repositório](https://github.com/caioeml/Bookstore-React)
 
 ### AuthenticationAPI
 
 API focada em autenticação e estrutura backend, reforçando conceitos de rotas, validação, segurança e separação de responsabilidades.
 
-[Ver repositorio](https://github.com/caioeml/AuthenticationAPI)
+[Ver repositório](https://github.com/caioeml/AuthenticationAPI)
 
 ### MeuProjetoMVC
 
 Projeto com padrão **MVC**, explorando organização de camadas, controllers, models, views e fluxo completo de uma aplicação web.
 
-[Ver repositorio](https://github.com/caioeml/MeuProjetoMVC)
+[Ver repositório](https://github.com/caioeml/MeuProjetoMVC)
 
 ## O que estou estudando agora
 
