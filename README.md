@@ -1,3 +1,5 @@
+<img width="100%" src="https://raw.githubusercontent.com/caioeml/caioeml/main/assets/profile-cover.svg" alt="Capa animada do perfil de Caio Lima" />
+
 # Oi, eu sou o Caio Lima
 
 Sou desenvolvedor em formação, criando projetos que juntam interface, regra de negócio e banco de dados. Gosto de transformar ideias em aplicações completas, com telas organizadas, autenticação, carrinho, consumo de APIs e experiências responsivas.
