@@ -1,0 +1,81 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Animated web developer cover for Caio Lima</title>
+  <desc id="desc">A red and blue animated web developer cover with moving web lines and a hero-inspired emblem on the right.</desc>
+  <style>
+    .web { stroke-dasharray: 22 20; animation: dash 9s linear infinite; }
+    .web2 { stroke-dasharray: 12 24; animation: dash 12s linear infinite reverse; }
+    .scan { animation: scan 5s ease-in-out infinite; }
+    .blink { animation: blink 2.8s ease-in-out infinite; }
+    .code { animation: codeSlide 8s linear infinite; }
+    .pulse { animation: pulse 3.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes dash { to { stroke-dashoffset: -260; } }
+    @keyframes scan { 0%,100% { opacity: .15; } 50% { opacity: .5; } }
+    @keyframes blink { 0%,45%,100% { opacity: .35; } 55%,70% { opacity: 1; } }
+    @keyframes codeSlide { 0% { transform: translateX(-80px); opacity: .16; } 20%,80% { opacity: .52; } 100% { transform: translateX(80px); opacity: .16; } }
+    @keyframes pulse { 0%,100% { opacity: .45; transform: scale(1); } 50% { opacity: .9; transform: scale(1.04); } }
+  </style>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#06111f" />
+      <stop offset="0.47" stop-color="#102d64" />
+      <stop offset="1" stop-color="#ba1330" />
+    </linearGradient>
+    <radialGradient id="rightGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(980 150) rotate(140) scale(360 230)">
+      <stop stop-color="#ff2f53" stop-opacity=".92" />
+      <stop offset="1" stop-color="#ff2f53" stop-opacity="0" />
+    </radialGradient>
+    <filter id="softGlow" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="360" rx="28" fill="url(#bg)" />
+  <rect width="1200" height="360" rx="28" fill="url(#rightGlow)" />
+  <rect class="scan" x="0" y="0" width="1200" height="360" rx="28" fill="#ffffff" opacity=".06" />
+
+  <g opacity=".34" stroke="#eaf6ff" stroke-linecap="round">
+    <path class="web" d="M-42 76C126 42 286 58 442 102C640 158 792 123 958 52C1063 7 1146 12 1244 54" stroke-width="2" />
+    <path class="web2" d="M-38 286C146 225 284 251 452 214C634 174 780 219 932 289C1044 341 1144 331 1236 276" stroke-width="2" />
+    <path class="web" d="M1120 -25C1018 75 920 151 805 215C690 279 555 327 430 385" stroke-width="1.7" />
+    <path class="web2" d="M1218 123C1080 132 954 158 830 218C733 264 654 322 583 399" stroke-width="1.7" />
+  </g>
+
+  <g opacity=".23" stroke="#ffffff" stroke-width="1">
+    <path d="M1030 42L836 214L952 289M836 214L442 102M836 214L452 214M836 214L1244 54" />
+    <circle cx="836" cy="214" r="78" />
+    <circle cx="836" cy="214" r="136" />
+    <circle cx="836" cy="214" r="204" />
+  </g>
+
+  <g transform="translate(72 72)">
+    <text x="0" y="54" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="48" font-weight="800">Caio Lima</text>
+    <text x="0" y="96" fill="#b9ddff" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="600">Desenvolvedor Full Stack em evolução</text>
+    <text x="0" y="138" fill="#eaf6ff" font-family="Segoe UI, Arial, sans-serif" font-size="20">React • JavaScript • PHP • MySQL • C# • .NET</text>
+  </g>
+
+  <g class="code" fill="#9fd8ff" font-family="Consolas, Monaco, 'Courier New', monospace" font-size="18">
+    <text x="92" y="304">&lt;React /&gt;</text>
+    <text x="254" y="304">const dev = 'Caio';</text>
+    <text x="540" y="304">API + UI + DB</text>
+  </g>
+
+  <g transform="translate(938 72) scale(.86)" filter="url(#softGlow)">
+    <animateTransform attributeName="transform" type="translate" values="938 72; 938 62; 938 72" dur="4.8s" repeatCount="indefinite" additive="replace" />
+    <path d="M97 8C128 20 152 49 156 84C160 130 128 174 92 197C83 203 71 203 62 197C26 174 -6 130 0 84C4 49 28 20 59 8C71 3 85 3 97 8Z" fill="#d81735" stroke="#ff7184" stroke-width="4" />
+    <path d="M35 78C54 59 83 59 103 78C92 91 76 98 58 98C48 98 40 91 35 78Z" fill="#eaf6ff" />
+    <path d="M121 78C102 59 73 59 53 78C64 91 80 98 98 98C108 98 116 91 121 78Z" fill="#eaf6ff" opacity=".92" />
+    <path d="M78 40V186M28 90C52 106 104 106 128 90M20 126C49 145 107 145 136 126" stroke="#6b0715" stroke-width="3" opacity=".72" />
+    <circle class="pulse" cx="78" cy="104" r="118" stroke="#ff405c" stroke-width="3" fill="none" />
+  </g>
+
+  <g class="blink" filter="url(#softGlow)">
+    <circle cx="160" cy="46" r="4" fill="#ffffff" />
+    <circle cx="1090" cy="260" r="4" fill="#ffffff" />
+    <circle cx="782" cy="74" r="3" fill="#ffffff" />
+  </g>
+</svg>
