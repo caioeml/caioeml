@@ -1,0 +1,100 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Animated developer cover for Caio Lima</title>
+  <desc id="desc">A dark blue and red animated developer cover with a smaller, vertically aligned suit-texture inspired web panel and a stylized spider emblem.</desc>
+  <style>
+    .web { stroke-dasharray: 22 20; animation: dash 9s linear infinite; }
+    .web2 { stroke-dasharray: 12 24; animation: dash 12s linear infinite reverse; }
+    .shade { animation: shade 6s ease-in-out infinite; }
+    .blink { animation: blink 2.8s ease-in-out infinite; }
+    .code { animation: codeSlide 8s linear infinite; }
+    .panelGlow { animation: pulse 3.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .spiderMark { animation: lift 5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes dash { to { stroke-dashoffset: -260; } }
+    @keyframes shade { 0%,100% { opacity: .18; } 50% { opacity: .3; } }
+    @keyframes blink { 0%,45%,100% { opacity: .35; } 55%,70% { opacity: 1; } }
+    @keyframes codeSlide { 0% { transform: translateX(-80px); opacity: .16; } 20%,80% { opacity: .46; } 100% { transform: translateX(80px); opacity: .16; } }
+    @keyframes pulse { 0%,100% { opacity: .32; transform: scale(1); } 50% { opacity: .58; transform: scale(1.03); } }
+    @keyframes lift { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+  </style>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050b16" />
+      <stop offset="0.5" stop-color="#0d285d" />
+      <stop offset="1" stop-color="#5d0d20" />
+    </linearGradient>
+    <radialGradient id="blueGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(310 115) rotate(30) scale(420 190)">
+      <stop stop-color="#1d68d8" stop-opacity=".42" />
+      <stop offset="1" stop-color="#1d68d8" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="suit" x1="845" y1="44" x2="1128" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a41125" />
+      <stop offset=".45" stop-color="#ca1831" />
+      <stop offset="1" stop-color="#5d0716" />
+    </linearGradient>
+    <filter id="softGlow" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <clipPath id="panelClip">
+      <path d="M1000 34L1158 92L1128 289L1000 334L872 289L842 92L1000 34Z" />
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="360" rx="28" fill="url(#bg)" />
+  <rect width="1200" height="360" rx="28" fill="url(#blueGlow)" />
+  <rect class="shade" width="1200" height="360" rx="28" fill="#020712" />
+
+  <g opacity=".28" stroke="#eaf6ff" stroke-linecap="round">
+    <path class="web" d="M-42 76C126 42 286 58 442 102C640 158 792 123 958 52C1063 7 1146 12 1244 54" stroke-width="2" />
+    <path class="web2" d="M-38 286C146 225 284 251 452 214C634 174 780 219 932 289C1044 341 1144 331 1236 276" stroke-width="2" />
+    <path class="web" d="M1120 -25C1018 75 920 151 805 215C690 279 555 327 430 385" stroke-width="1.7" />
+    <path class="web2" d="M1218 123C1080 132 954 158 830 218C733 264 654 322 583 399" stroke-width="1.7" />
+  </g>
+
+  <g transform="translate(72 72)">
+    <text x="0" y="54" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="48" font-weight="800">Caio Lima</text>
+    <text x="0" y="96" fill="#b9ddff" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="600">Desenvolvedor Full Stack em evolução</text>
+    <text x="0" y="138" fill="#eaf6ff" font-family="Segoe UI, Arial, sans-serif" font-size="20">React • JavaScript • PHP • MySQL • C# • .NET</text>
+  </g>
+
+  <g class="code" fill="#9fd8ff" font-family="Consolas, Monaco, 'Courier New', monospace" font-size="18">
+    <text x="92" y="304">&lt;React /&gt;</text>
+    <text x="254" y="304">const dev = 'Caio';</text>
+    <text x="540" y="304">API + UI + DB</text>
+  </g>
+
+  <g transform="translate(195 14) scale(.78)" filter="url(#softGlow)">
+    <path class="panelGlow" d="M1000 32L1166 88L1136 294L1000 342L864 294L834 88L1000 32Z" stroke="#ff405c" stroke-width="4" fill="none" opacity=".6" />
+    <path d="M1000 34L1158 92L1128 289L1000 334L872 289L842 92L1000 34Z" fill="url(#suit)" stroke="#21040b" stroke-width="10" />
+    <path d="M1000 41L1146 98L1118 281L1000 323L882 281L854 98L1000 41Z" stroke="#ff5a73" stroke-width="3" opacity=".88" />
+
+    <g clip-path="url(#panelClip)" stroke="#160309" stroke-linecap="round">
+      <path d="M1000 34V334" stroke-width="5" />
+      <path d="M842 92C900 122 953 141 1000 151C1047 141 1100 122 1158 92" stroke-width="4" />
+      <path d="M854 150C906 167 957 177 1000 182C1043 177 1094 167 1146 150" stroke-width="4" />
+      <path d="M866 215C918 202 963 195 1000 193C1037 195 1082 202 1134 215" stroke-width="4" />
+      <path d="M882 281C927 246 967 218 1000 193C1033 218 1073 246 1118 281" stroke-width="4" />
+      <path d="M842 92L1000 193L1158 92M872 289L1000 193L1128 289" stroke-width="4" />
+      <path d="M920 64C948 110 972 154 1000 193C1028 154 1052 110 1080 64" stroke-width="3" opacity=".76" />
+      <path d="M910 312C940 263 970 223 1000 193C1030 223 1060 263 1090 312" stroke-width="3" opacity=".76" />
+    </g>
+
+    <g class="spiderMark">
+      <ellipse cx="1000" cy="185" rx="22" ry="42" fill="#252a2f" stroke="#06070d" stroke-width="4" />
+      <ellipse cx="1000" cy="135" rx="17" ry="20" fill="#252a2f" stroke="#06070d" stroke-width="4" />
+      <path d="M982 156C940 132 915 116 892 86M980 174C936 166 908 160 872 145M982 195C942 216 918 234 892 270M1018 156C1060 132 1085 116 1108 86M1020 174C1064 166 1092 160 1128 145M1018 195C1058 216 1082 234 1108 270" stroke="#252a2f" stroke-width="11" stroke-linecap="round" />
+      <path d="M982 156C940 132 915 116 892 86M980 174C936 166 908 160 872 145M982 195C942 216 918 234 892 270M1018 156C1060 132 1085 116 1108 86M1020 174C1064 166 1092 160 1128 145M1018 195C1058 216 1082 234 1108 270" stroke="#05070d" stroke-width="4" stroke-linecap="round" />
+      <path d="M990 153C996 158 1004 158 1010 153M986 180C994 187 1006 187 1014 180" stroke="#515963" stroke-width="3" opacity=".78" />
+    </g>
+  </g>
+
+  <g class="blink" filter="url(#softGlow)">
+    <circle cx="160" cy="46" r="4" fill="#ffffff" />
+    <circle cx="1090" cy="260" r="4" fill="#ffffff" />
+    <circle cx="782" cy="74" r="3" fill="#ffffff" />
+  </g>
+</svg>
