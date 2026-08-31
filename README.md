@@ -1,4 +1,4 @@
-<img width="100%" src="https://raw.githubusercontent.com/caioeml/caioeml/main/assets/profile-cover-v3.svg" alt="Capa animada do perfil de Caio Lima" />
+<img width="100%" src="https://raw.githubusercontent.com/caioeml/caioeml/main/assets/profile-cover-v4.svg" alt="Capa animada do perfil de Caio Lima" />
 
 # Oi, eu sou o Caio Lima
 
