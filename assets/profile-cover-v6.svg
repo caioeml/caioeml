@@ -1,0 +1,108 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Animated developer cover for Caio Lima</title>
+  <desc id="desc">A dark blue and red animated developer cover with moving web lines and a refined spider-inspired circular mask emblem.</desc>
+  <style>
+    .web { stroke-dasharray: 22 20; animation: dash 9s linear infinite; }
+    .web2 { stroke-dasharray: 12 24; animation: dash 12s linear infinite reverse; }
+    .shade { animation: shade 6s ease-in-out infinite; }
+    .blink { animation: blink 2.8s ease-in-out infinite; }
+    .code { animation: codeSlide 8s linear infinite; }
+    .pulse { animation: pulse 3.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes dash { to { stroke-dashoffset: -260; } }
+    @keyframes shade { 0%,100% { opacity: .16; } 50% { opacity: .3; } }
+    @keyframes blink { 0%,45%,100% { opacity: .35; } 55%,70% { opacity: 1; } }
+    @keyframes codeSlide { 0% { transform: translateX(-80px); opacity: .16; } 20%,80% { opacity: .46; } 100% { transform: translateX(80px); opacity: .16; } }
+    @keyframes pulse { 0%,100% { opacity: .32; transform: scale(1); } 50% { opacity: .68; transform: scale(1.04); } }
+  </style>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050b16" />
+      <stop offset="0.48" stop-color="#0d285d" />
+      <stop offset="1" stop-color="#741124" />
+    </linearGradient>
+    <radialGradient id="rightGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1000 166) rotate(140) scale(310 220)">
+      <stop stop-color="#d91f3e" stop-opacity=".45" />
+      <stop offset="1" stop-color="#d91f3e" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="blueGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(310 115) rotate(30) scale(420 190)">
+      <stop stop-color="#1d68d8" stop-opacity=".42" />
+      <stop offset="1" stop-color="#1d68d8" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="maskFill" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(982 118) rotate(70) scale(145)">
+      <stop stop-color="#f51a35" />
+      <stop offset="1" stop-color="#9f0c20" />
+    </radialGradient>
+    <filter id="softGlow" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <clipPath id="faceClip">
+      <circle cx="1000" cy="166" r="98" />
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="360" rx="28" fill="url(#bg)" />
+  <rect width="1200" height="360" rx="28" fill="url(#blueGlow)" />
+  <rect width="1200" height="360" rx="28" fill="url(#rightGlow)" />
+  <rect class="shade" width="1200" height="360" rx="28" fill="#020712" />
+
+  <g opacity=".3" stroke="#eaf6ff" stroke-linecap="round">
+    <path class="web" d="M-42 76C126 42 286 58 442 102C640 158 792 123 958 52C1063 7 1146 12 1244 54" stroke-width="2" />
+    <path class="web2" d="M-38 286C146 225 284 251 452 214C634 174 780 219 932 289C1044 341 1144 331 1236 276" stroke-width="2" />
+    <path class="web" d="M1120 -25C1018 75 920 151 805 215C690 279 555 327 430 385" stroke-width="1.7" />
+    <path class="web2" d="M1218 123C1080 132 954 158 830 218C733 264 654 322 583 399" stroke-width="1.7" />
+  </g>
+
+  <g opacity=".15" stroke="#ffffff" stroke-width="1">
+    <path d="M1030 42L836 214L952 289M836 214L442 102M836 214L452 214M836 214L1244 54" />
+    <circle cx="836" cy="214" r="78" />
+    <circle cx="836" cy="214" r="136" />
+    <circle cx="836" cy="214" r="204" />
+  </g>
+
+  <g transform="translate(72 72)">
+    <text x="0" y="54" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="48" font-weight="800">Caio Lima</text>
+    <text x="0" y="96" fill="#b9ddff" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="600">Desenvolvedor Full Stack em evolução</text>
+    <text x="0" y="138" fill="#eaf6ff" font-family="Segoe UI, Arial, sans-serif" font-size="20">React • JavaScript • PHP • MySQL • C# • .NET</text>
+  </g>
+
+  <g class="code" fill="#9fd8ff" font-family="Consolas, Monaco, 'Courier New', monospace" font-size="18">
+    <text x="92" y="304">&lt;React /&gt;</text>
+    <text x="254" y="304">const dev = 'Caio';</text>
+    <text x="540" y="304">API + UI + DB</text>
+  </g>
+
+  <g filter="url(#softGlow)">
+    <circle class="pulse" cx="1000" cy="166" r="122" stroke="#ff405c" stroke-width="3" fill="none" />
+    <circle cx="1000" cy="166" r="111" fill="#05070d" />
+    <circle cx="1000" cy="166" r="97" fill="url(#maskFill)" />
+
+    <g clip-path="url(#faceClip)">
+      <path d="M1000 69V263" stroke="#0d0206" stroke-width="5" />
+      <path d="M1000 166L914 108M1000 166L1086 108M1000 166L902 166M1000 166L1098 166M1000 166L924 237M1000 166L1076 237" stroke="#0d0206" stroke-width="3.5" />
+      <path d="M924 91C951 114 976 133 1000 145C1024 133 1049 114 1076 91" stroke="#0d0206" stroke-width="3" fill="none" />
+      <path d="M907 131C943 147 973 155 1000 158C1027 155 1057 147 1093 131" stroke="#0d0206" stroke-width="3" fill="none" />
+      <path d="M907 199C943 187 973 180 1000 177C1027 180 1057 187 1093 199" stroke="#0d0206" stroke-width="3" fill="none" />
+      <path d="M934 246C956 219 978 195 1000 177C1022 195 1044 219 1066 246" stroke="#0d0206" stroke-width="3" fill="none" />
+    </g>
+
+    <path d="M901 150C922 104 967 88 1001 124C974 171 924 186 901 150Z" fill="#05070d" />
+    <path d="M1099 150C1078 104 1033 88 999 124C1026 171 1076 186 1099 150Z" fill="#05070d" />
+    <path d="M918 147C937 116 967 108 990 128C968 157 938 166 918 147Z" fill="#f4fbff" />
+    <path d="M1082 147C1063 116 1033 108 1010 128C1032 157 1062 166 1082 147Z" fill="#f4fbff" />
+    <path d="M1000 132V204" stroke="#0d0206" stroke-width="5" />
+    <circle cx="1000" cy="176" r="12" fill="#f51a35" stroke="#0d0206" stroke-width="3" />
+    <circle cx="1000" cy="166" r="108" stroke="#05070d" stroke-width="11" fill="none" />
+    <circle cx="1000" cy="166" r="98" stroke="#ff5972" stroke-width="3" fill="none" opacity=".86" />
+  </g>
+
+  <g class="blink" filter="url(#softGlow)">
+    <circle cx="160" cy="46" r="4" fill="#ffffff" />
+    <circle cx="1090" cy="260" r="4" fill="#ffffff" />
+    <circle cx="782" cy="74" r="3" fill="#ffffff" />
+  </g>
+</svg>
